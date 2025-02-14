@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuvlyCard - Valentine's Card</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-pink-100">
+    <div id="cardContainer" class="frame relative overflow-hidden">
+        <div class="card text-white">
+            <h2 class="text-3xl font-bold mb-3">Happy Valentine's Day! 💖</h2>
+            <p id="quote" class="text-lg">You make my heart smile every single day.</p>
+            <div class="watermark">Made with ❤️ by Rozhak</div>
+        </div>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-4 justify-center">
+        <label class="flex items-center gap-2 bg-white p-2 rounded-full shadow-lg hover:bg-pink-200 transition cursor-pointer">
+            <span class="text-sm font-bold text-pink-600">Background:</span>
+            <input type="color" id="bgColor" class="appearance-none w-10 h-10 rounded-full border-2 border-pink-400 cursor-pointer p-1" onchange="changeBgColor(this.value)">
+        </label>
+
+        <input type="text" id="customText" placeholder="Enter your message"
+            class="px-4 py-2 border-2 border-pink-400 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-300 text-center text-pink-600 font-semibold">
+    
+        <button onclick="downloadCard()" class="px-4 py-2 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-400 transition">
+            Download
+        </button>
+        <button onclick="shareCard()" class="px-4 py-2 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-400 transition">
+            Share
+        </button>
+        <button onclick="generateRandomEffects()" class="px-4 py-2 bg-pink-500 text-white font-bold rounded-full shadow-lg hover:bg-pink-400 transition">
+            Randomize
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

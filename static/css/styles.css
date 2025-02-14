@@ -1,0 +1,43 @@
+.card {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(255, 118, 137, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(255, 118, 137, 0.5);
+}
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.frame {
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+}
+.falling-element {
+    position: absolute;
+    top: -50px;
+    animation: fall 5s linear infinite;
+    font-size: 20px;
+}
+@keyframes fall {
+    0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(400px) rotate(360deg); opacity: 0; }
+}
