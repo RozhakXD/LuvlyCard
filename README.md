@@ -1,4 +1,5 @@
 # LuvlyCard 💖✨
+![LuvlyCard Logo](https://github.com/user-attachments/assets/73d20c67-c40e-40e5-bac7-240d1bca3896)
 
 **LuvlyCard** adalah platform interaktif yang memungkinkan pengguna untuk membuat, menyesuaikan, dan membagikan kartu ucapan digital dengan sentuhan romantis dan kreatif. Dengan berbagai pilihan kutipan cinta, warna latar, serta fitur personalisasi teks, LuvlyCard memberikan pengalaman unik dalam mengekspresikan perasaan kepada orang tersayang.
 
